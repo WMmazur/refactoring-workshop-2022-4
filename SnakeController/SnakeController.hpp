@@ -7,6 +7,7 @@
 
 #include "IEventHandler.hpp"
 #include "SnakeInterface.hpp"
+#include "SnakeSegments.hpp"
 
 class Event;
 class IPort;
@@ -70,6 +71,7 @@ private:
     void sendPlaceNewFood(int x, int y);
 
     bool m_paused;
+    SnakeSegments snakeSegments;
 };
 
 } // namespace Snake
